@@ -157,7 +157,7 @@ angular.module( 'ui.bootstrap.tooltip', [ 'ui.bootstrap.position', 'ui.bootstrap
             function hideTooltipBind() {
               hide();
               if (!scope.$root.$$phase) {
-                scope.$apply();
+                scope.$digest();
               }
             }
 
